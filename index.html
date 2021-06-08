@@ -15,7 +15,7 @@
     <nav class="nav-bar">
         <a href="#"><img src="./images/bbx-logo-white-shadowed.svg" alt="black box logo"></a>
         <div class="nav-links">
-            <a href="#platform">PLATFROM</a>
+            <a href="#platform">PLATFORM</a>
             <a href="#gallery">GALLERY</a>
             <a href="#contact">CONTACT</a>
         </div>
@@ -33,49 +33,51 @@
 
     <!-- Platform details -->
     <section class='platform'>
-        <img src="./images/mask-screen-nti.png" alt="screen">
-        <h3>DIGITAL CIS PLATFORM</h3>
-        <h4>The Blackbox Digital CIS platform enhances the passenger journey, supports the frontline staff and enables the control room to be more responsive.</h4>
-        <div class='box'>
-            <img src="./images/icons/icon-screen.svg" alt="">
+        <img src="./images/mask-screen-nti.png" alt="screen" class='screen-image'id='platform'>
+        <div class="platform-title">
+            <h3>DIGITAL CIS PLATFORM</h3>
+            <h4 class='platform-subtext'>The Blackbox Digital CIS platform enhances the passenger journey, supports the frontline staff and enables the control room to be more responsive.</h4>
+        </div>
+        <div class='box box1'>
+            <img src="./images/icons/icon-screen.svg" alt="" class='platform-icon'>
             <h5>DIGITAL CIS DISPLAYS</h5>
             <hr>
             <p>Our state-of-the-art multipurpose displays offer flexibility to operators and inform customers more effectively by applying modern design principles to information streams.</p>
         </div>
-        <div class='box'>
-            <img src="./images/icons/icon-eye.svg" alt="">
+        <div class='box box2'>
+            <img src="./images/icons/icon-eye.svg" alt="" class='platform-icon'>
             <h5>INFORMATION AT-A-GLANCE</h5>
             <hr>
             <p>Customers are easily able to discern information being presented to them, empowering them to make the best decisions for their journey.</p>
         </div>
-        <div class='box'>
-            <img src="./images/icons/icon-single-output.svg" alt="">
+        <div class='box box3'>
+            <img src="./images/icons/icon-single-output.svg" alt="" class='platform-icon'>
             <h5>SINGLE OUTPUT CONTROL ROOM</h5>
             <hr>
             <p>A smart suite of software available whenever, and wherever, you are. Manage and monitor your hardware and ensure you can make your changes quickly and easily.</p>
         </div>
-        <div class='box'>
-            <img src="./images/icons/icon-lock-white.svg" alt="">
+        <div class='box box4'>
+            <img src="./images/icons/icon-lock-white.svg" alt="" class='platform-icon'>
             <h5>SECURE CLOUD CONNECTION</h5>
             <hr>
             <p>Utilising Microsoft and Amazon cloud services, and through the use of connection and data encryption, you can be sure your data is safe.</p>
         </div>
-        <div class='box'>
-            <img src="./images/icons/icon-alert-white.svg" alt="">
+        <div class='box box5'>
+            <img src="./images/icons/icon-alert-white.svg" alt="" class='platform-icon'>
             <h5>DISRUPTION CHANNEL MODE</h5>
             <hr>
             <p>Disruption modes allow you to configure customer information outputs to fit a variety of situations. Changing between different channels is as easy as clicking a button.</p>
         </div>
-        <div class='box'>
-            <img src="./images/icons/icon-cloud-computing-white.svg" alt="">
+        <div class='box box6'>
+            <img src="./images/icons/icon-cloud-computing-white.svg" alt="" class='platform-icon'>
             <h5>REMOTE STATE MONITORING</h5>
             <hr>
             <p>Understand and act on issues with our management dashboards and performance metrics. Our advanced state monitoring ensures you have up-to-date status reports on all your equipment.</p>
         </div>
-
+    </section>
 
         <!-- Gallery -->
-        <section class="gallery-container">
+        <section class="gallery-container" id='gallery'>
             <h3>GALLERY</h3>
             <div class="gallery">
                 <a href="./images/GALLERY/1-large.png"><img src="./images/GALLERY/1-small.jpg" alt=""></a>
@@ -94,40 +96,45 @@
         </section>
 
         <!-- form -->
-        <section class="form-container">
-            <h3>GET IN TOUCH</h3>
-            <h4>Interested to learn more about the Blackbox platform?</h4>
-            <form class='form' action="POST">
-                <input type="text" id='name' placeholder="Your Name (Required)" required>
-                <input type="text" id='email' placeholder="Your Email (Required)" required>
-                <input type="text" id='phone' placeholder="Your Phone (Required)" required>
-                <input type="texbox" id='message' placeholder="Message">
-                <button>Send Message</button>
-            </form>
+        <section class="map" id='contact'>
+            <div class="form-container">
+                <form class='form' action="POST">
+                    <h3>GET IN TOUCH</h3>
+                    <h4>Interested to learn more about the Blackbox platform?</h4>
+                    <input  class='full'type="text" id='name' placeholder="Your Name (Required)" required> <br>
+                    <input class='half' type="text" id='email' placeholder="Your Email (Required)" required> 
+                    <input class='half' type="text" id='phone' placeholder="Your Phone (Required)" required> <br>
+                    <input  class='full'type="texbox" id='message' placeholder="Message" wrap='on'> <br>
+                    <button class='full'>Send Message</button>
+                </form>
+            </div>
         </section>
 
         <!-- Contact -->
         <section class='contact'>
-            <div class='contact-box'>
-                <img src="" alt="">
-                <p>LOCAL: (01344) 513 333 <br> UK: 0330 900 0006</p>
-            </div>
-            <div class='contact-box'>
-                <img src="" alt="">
-                <p>BAY 1 - CROWTHORNE HOUSE - NINE MILE RIDE - <br> CROWTHORNE, RG40 3GA</p>
-            </div>
-            <div class='contact-box'>
-                <img src="" alt="">
-                <p>INFO@BLACKBOX-CO.COM</p>
+            <div class="contact-box-container">
+                <div class='contact-box'>
+                    <img src="./images/icons/smartphone-call.svg" alt="">
+                    <p>LOCAL: (01344) 513 333 <br> UK: 0330 900 0006</p>
+                </div>
+                <div class='contact-box'>
+                    <img src="./images/icons/gps.svg" alt="">
+                    <p>BAY 1 - CROWTHORNE HOUSE - NINE MILE RIDE - <br> CROWTHORNE, RG40 3GA</p>
+                </div>
+                <div class='contact-box'>
+                    <img src="./images/icons/email.svg" alt="">
+                    <p>INFO@BLACKBOX-CO.COM</p>
+                </div>
             </div>
         </section>
 
-        <footer class='footer'>
-            <img src="./images/icons/icon-twitter-white.svg" alt="">
-            <img src="./images/icons/icon-linkedin-white.svg" alt="">
-            <p class='copywright'>© 2016 - 2018 BLACKBOX COMPANY (UK) LTD.</p>
-            <img src="./images/bbx-logo-white-shadowed.svg" alt="">
-        </footer>
-    </section>
+        <div class="footer-container">
+            <footer class='footer'>
+                <img src="./images/icons/icon-twitter-white.svg" alt="">
+                <img src="./images/icons/icon-linkedin-white.svg" alt="">
+                <p class='copyright'>© 2016 - 2018 BLACKBOX COMPANY (UK) LTD.</p>
+                <img id='logo' src="./images/bbx-logo-white-shadowed.svg" alt="">
+            </footer>
+        </div>
 </body>
 </html>
