@@ -3,8 +3,6 @@
   padding: 0;
 }
 
-/* I am now going to make this website responsive */
-
 html {
   scroll-behavior: smooth;
 }
@@ -22,6 +20,7 @@ body {
   height: auto;
   background-color: rgb(46, 46, 60);
   position: fixed;
+  z-index: 100;
 }
 
 .nav-bar img {
@@ -49,6 +48,16 @@ body {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-bar img {
+    margin-left: 10%;
+  }
+}
+
 /* main section */
 .main {
   padding-top: 120px;
@@ -61,8 +70,8 @@ body {
 }
 
 .main h1 {
+  width: auto;
   font-size: 6.5em;
-  max-width: 33%;
   line-height: 1.05em;
   color: #ffffff;
   text-shadow: 0 2px 2px rgb(0 0 0 / 75%);
@@ -70,6 +79,7 @@ body {
 }
 
 .main h2 {
+  width: auto;
   font-size: 5em;
   font-weight: 400;
   color: #faf375;
@@ -78,9 +88,46 @@ body {
 }
 
 .title-wrapper {
-  width: 50%;
-  margin-left: 22%;
+  width: 100%;
+  margin-left: 20%;
   padding-top: 6%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .main h1 {
+    font-size: 5em;
+  }
+  .main h2 {
+    font-size: 4em;
+  }
+  .title-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main h1 {
+    font-size: 4em;
+  }
+  .main h2 {
+    font-size: 3em;
+  }
+
+  .main {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .title-wrapper {
+    width: 100%;
+  }
 }
 
 /* platform */
@@ -88,6 +135,7 @@ body {
   background-color: rgb(60, 60, 78);
   display: block;
   height: 50px;
+  width: 100%;
 }
 .platform-container {
   background-color: rgb(60, 60, 78);
@@ -147,7 +195,6 @@ hr {
   width: 25%;
   border: 1px solid #faf375;
   height: 0px;
-  align-self: baseline;
 }
 
 .box {
@@ -172,13 +219,13 @@ hr {
 .box hr {
   grid-column: 2/3;
   grid-row: 2/3;
-  /* align-self: end; */
 }
 
 .box p {
   grid-column: 2/3;
   grid-row: 3/4;
   color: rgba(255, 255, 255, 0.75);
+  height: auto;
 }
 
 .box1 {
@@ -216,14 +263,122 @@ hr {
   letter-spacing: 1.5px;
 }
 
-/* Gallery  */
+@media only screen and (max-width: 1700px) {
+  .screen-image {
+    display: none;
+  }
 
+  .platform {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .platform-title {
+    grid-column: 1 / 4;
+  }
+
+  .box1 {
+    grid-column: 1/2;
+  }
+  .box2 {
+    grid-column: 2/3;
+  }
+  .box3 {
+    grid-column: 3/4;
+  }
+
+  .box4 {
+    grid-column: 1/2;
+  }
+  .box5 {
+    grid-column: 2/3;
+  }
+  .box6 {
+    grid-column: 3/4;
+  }
+  .platform-icon {
+    height: 25px;
+  }
+  .platform {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .platform {
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .platform {
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-height: none;
+    height: 900px;
+  }
+
+  hr {
+    align-self: center;
+  }
+
+  .box {
+    grid-template-rows: 15% 15% 70%;
+    height: 120px;
+  }
+
+  .platform-title {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+
+  .box1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .box2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .box3 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .box4 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .box5 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .box6 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .platform {
+    height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .platform {
+    height: 1200px;
+    width: 90%;
+  }
+}
+
+/* Gallery */
 #gallery-locator {
   height: 90px;
 }
 .gallery-container {
+  padding-bottom: 100px;
   background-color: white;
-  margin-bottom: 100px;
 }
 .gallery {
   display: grid;
@@ -257,7 +412,33 @@ hr {
   letter-spacing: 2px;
 }
 
-/* form  */
+@media only screen and (max-width: 1400px) {
+  .gallery {
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .gallery-title {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* form */
 .map {
   height: 465px;
   background-image: url(../images/map_BW.png);
@@ -350,6 +531,37 @@ button {
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 
+@media only screen and (max-width: 1640px) {
+  .form h3,
+  h3 {
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .form-container {
+    width: 50%;
+    right: 0;
+    padding: 30px;
+    padding-bottom: 80px;
+  }
+
+  .form h3,
+  h3 {
+    padding-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form-container {
+    width: 90%;
+    position: relative;
+  }
+  .map {
+    background-image: none;
+  }
+}
+
 /* Contact */
 .contact {
   background-color: white;
@@ -378,11 +590,19 @@ button {
   line-height: 20px;
 }
 
+@media only screen and (max-width: 800px) {
+  .contact-box-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
 /* footer */
 .footer-container {
   background-color: #252525;
   border-top: 1px solid green;
   height: 100px;
+  width: 100%;
 }
 
 .footer img {
@@ -407,4 +627,22 @@ button {
 .copyright {
   border-left: 1px solid white;
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .copyright {
+    margin-left: 20px;
+  }
 }
