@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackbox Company (UK) Ltd.</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <script src='./js/lightbox-plus-jquery.min.js'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
@@ -32,66 +34,68 @@
 
 
     <!-- Platform details -->
-    <section class='platform'>
-        <img src="./images/mask-screen-nti.png" alt="screen" class='screen-image'id='platform'>
-        <div class="platform-title">
-            <h3>DIGITAL CIS PLATFORM</h3>
-            <h4 class='platform-subtext'>The Blackbox Digital CIS platform enhances the passenger journey, supports the frontline staff and enables the control room to be more responsive.</h4>
-        </div>
-        <div class='box box1'>
-            <img src="./images/icons/icon-screen.svg" alt="" class='platform-icon'>
-            <h5>DIGITAL CIS DISPLAYS</h5>
-            <hr>
-            <p>Our state-of-the-art multipurpose displays offer flexibility to operators and inform customers more effectively by applying modern design principles to information streams.</p>
-        </div>
-        <div class='box box2'>
-            <img src="./images/icons/icon-eye.svg" alt="" class='platform-icon'>
-            <h5>INFORMATION AT-A-GLANCE</h5>
-            <hr>
-            <p>Customers are easily able to discern information being presented to them, empowering them to make the best decisions for their journey.</p>
-        </div>
-        <div class='box box3'>
-            <img src="./images/icons/icon-single-output.svg" alt="" class='platform-icon'>
-            <h5>SINGLE OUTPUT CONTROL ROOM</h5>
-            <hr>
-            <p>A smart suite of software available whenever, and wherever, you are. Manage and monitor your hardware and ensure you can make your changes quickly and easily.</p>
-        </div>
-        <div class='box box4'>
-            <img src="./images/icons/icon-lock-white.svg" alt="" class='platform-icon'>
-            <h5>SECURE CLOUD CONNECTION</h5>
-            <hr>
-            <p>Utilising Microsoft and Amazon cloud services, and through the use of connection and data encryption, you can be sure your data is safe.</p>
-        </div>
-        <div class='box box5'>
-            <img src="./images/icons/icon-alert-white.svg" alt="" class='platform-icon'>
-            <h5>DISRUPTION CHANNEL MODE</h5>
-            <hr>
-            <p>Disruption modes allow you to configure customer information outputs to fit a variety of situations. Changing between different channels is as easy as clicking a button.</p>
-        </div>
-        <div class='box box6'>
-            <img src="./images/icons/icon-cloud-computing-white.svg" alt="" class='platform-icon'>
-            <h5>REMOTE STATE MONITORING</h5>
-            <hr>
-            <p>Understand and act on issues with our management dashboards and performance metrics. Our advanced state monitoring ensures you have up-to-date status reports on all your equipment.</p>
-        </div>
-    </section>
+    <div class="platform-container">
+        <section class='platform'>
+            <img src="./images/mask-screen-nti.png" alt="screen" class='screen-image'id='platform'>
+            <div class="platform-title">
+                <h3>DIGITAL CIS PLATFORM</h3>
+                <h4 class='platform-subtext'>The Blackbox Digital CIS platform enhances the passenger journey, supports the frontline staff and enables the control room to be more responsive.</h4>
+            </div>
+            <div class='box box1'>
+                <img src="./images/icons/icon-screen.svg" alt="" class='platform-icon'>
+                <h5>DIGITAL CIS DISPLAYS</h5>
+                <hr>
+                <p>Our state-of-the-art multipurpose displays offer flexibility to operators and inform customers more effectively by applying modern design principles to information streams.</p>
+            </div>
+            <div class='box box2'>
+                <img src="./images/icons/icon-eye.svg" alt="" class='platform-icon'>
+                <h5>INFORMATION AT-A-GLANCE</h5>
+                <hr>
+                <p>Customers are easily able to discern information being presented to them, empowering them to make the best decisions for their journey.</p>
+            </div>
+            <div class='box box3'>
+                <img src="./images/icons/icon-single-output.svg" alt="" class='platform-icon'>
+                <h5>SINGLE OUTPUT CONTROL ROOM</h5>
+                <hr>
+                <p>A smart suite of software available whenever, and wherever, you are. Manage and monitor your hardware and ensure you can make your changes quickly and easily.</p>
+            </div>
+            <div class='box box4'>
+                <img src="./images/icons/icon-lock-white.svg" alt="" class='platform-icon'>
+                <h5>SECURE CLOUD CONNECTION</h5>
+                <hr>
+                <p>Utilising Microsoft and Amazon cloud services, and through the use of connection and data encryption, you can be sure your data is safe.</p>
+            </div>
+            <div class='box box5'>
+                <img src="./images/icons/icon-alert-white.svg" alt="" class='platform-icon'>
+                <h5>DISRUPTION CHANNEL MODE</h5>
+                <hr>
+                <p>Disruption modes allow you to configure customer information outputs to fit a variety of situations. Changing between different channels is as easy as clicking a button.</p>
+            </div>
+            <div class='box box6'>
+                <img src="./images/icons/icon-cloud-computing-white.svg" alt="" class='platform-icon'>
+                <h5>REMOTE STATE MONITORING</h5>
+                <hr>
+                <p>Understand and act on issues with our management dashboards and performance metrics. Our advanced state monitoring ensures you have up-to-date status reports on all your equipment.</p>
+            </div>
+        </section>
+    </div>
 
         <!-- Gallery -->
         <section class="gallery-container" id='gallery'>
-            <h3>GALLERY</h3>
+            <h3 class='gallery-title'>GALLERY</h3>
             <div class="gallery">
-                <a href="./images/GALLERY/1-large.png"><img src="./images/GALLERY/1-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/2-large.png"><img src="./images/GALLERY/2-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/3-large.png"><img src="./images/GALLERY/3-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/4-large.png"><img src="./images/GALLERY/4-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/5-large.png"><img src="./images/GALLERY/5-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/6-large.png"><img src="./images/GALLERY/6-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/7-large.png"><img src="./images/GALLERY/7-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/8-large.png"><img src="./images/GALLERY/8-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/9-large.png"><img src="./images/GALLERY/9-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/10-large.png"><img src="./images/GALLERY/10-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/11-large.png"><img src="./images/GALLERY/11-small.jpg" alt=""></a>
-                <a href="./images/GALLERY/12-large.png"><img src="./images/GALLERY/12-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/1-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/1-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/2-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/2-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/3-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/3-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/4-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/4-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/5-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/5-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/6-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/6-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/7-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/7-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/8-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/8-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/9-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/9-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/10-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/10-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/11-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/11-small.jpg" alt=""></a>
+                <a href="./images/GALLERY/12-large.png" data-lightbox='mygallery'><img src="./images/GALLERY/12-small.jpg" alt=""></a>
             </div>
         </section>
 

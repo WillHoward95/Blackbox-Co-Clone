@@ -11,7 +11,7 @@ body {
   line-height: 23px;
   font-size: 13px;
   font-family: "Raleway", sans-serif;
-  background-color: rgb(60, 60, 78);
+  background-color: white;
 }
 
 /* nav-bar */
@@ -52,7 +52,7 @@ body {
   padding-top: 120px;
   width: 100%;
   height: 810px;
-  background-image: url(./images/main-content-background.png);
+  background-image: url(../images/main-content-background.png);
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -81,6 +81,10 @@ body {
 }
 
 /* platform */
+.platform-container {
+  background-color: rgb(60, 60, 78);
+}
+
 .platform {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -205,19 +209,46 @@ hr {
 }
 
 /* Gallery  */
-.gallery {
+.gallery-container {
   background-color: white;
+  margin-bottom: 100px;
+}
+.gallery {
+  display: grid;
+  margin: 50px auto 0 auto;
+  width: 45%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 .gallery img {
-  height: 100px;
-  margin-bottom: 200px;
+  transition: 1s;
+  width: 95%;
+  height: 100%;
+  margin: 2.5%;
+}
+
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.gallery-title {
+  width: 55%;
+  margin: auto;
+  height: 100%;
+  padding-top: 50px;
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: 2px;
 }
 
 /* form  */
 .map {
   height: 465px;
-  background-image: url(./images/map_BW.png);
+  background-image: url(../images/map_BW.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -288,7 +319,6 @@ button {
 }
 
 #phone {
-  /* margin-left: 8.6%; */
   float: right;
 }
 
