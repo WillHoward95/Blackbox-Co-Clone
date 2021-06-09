@@ -18,7 +18,7 @@ body {
 .nav-bar {
   width: 100%;
   height: auto;
-  background-color: rgb(60, 60, 78);
+  background-color: rgb(46, 46, 60);
   position: fixed;
 }
 
@@ -54,7 +54,8 @@ body {
   height: 810px;
   background-image: url(../images/main-content-background.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-position: right;
 }
 
 .main h1 {
@@ -81,6 +82,11 @@ body {
 }
 
 /* platform */
+#platform-locator {
+  background-color: rgb(60, 60, 78);
+  display: block;
+  height: 50px;
+}
 .platform-container {
   background-color: rgb(60, 60, 78);
 }
@@ -209,6 +215,10 @@ hr {
 }
 
 /* Gallery  */
+
+#gallery-locator {
+  height: 90px;
+}
 .gallery-container {
   background-color: white;
   margin-bottom: 100px;
@@ -252,6 +262,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-position: center;
 }
 
 .form-container {
