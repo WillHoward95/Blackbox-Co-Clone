@@ -702,6 +702,14 @@ button {
   height: 25px;
 }
 
+.footer a {
+  opacity: 0.5;
+}
+
+.footer a:hover {
+  opacity: 0.75;
+}
+
 .footer {
   width: 60%;
   margin: 0 auto;
