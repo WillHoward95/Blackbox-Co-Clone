@@ -11,17 +11,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src='./js/script.js' defer></script>
 </head>
 <body>
     <!-- nav bar -->
-    <nav class="nav-bar">
-        <a href="#"><img src="./images/bbx-logo-white-shadowed.svg" alt="black box logo"></a>
-        <div class="nav-links">
-            <a href="#platform-locator">PLATFORM</a>
-            <a href="#gallery-locator">GALLERY</a>
-            <a href="#contact">CONTACT</a>
-        </div>
-    </nav>
+    <div class="nav-bar-container">
+        <nav class="nav-bar" id='nav-bar'>
+            <a href="#"><img src="./images/bbx-logo-white-shadowed.svg" alt="black box logo"></a>
+            <a href="#" class='toggle-button' id='toggle-button'>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+            </a>
+            <div class="nav-links" id='nav-links'>
+                <a href="#platform-locator">PLATFORM</a>
+                <a href="#gallery-locator">GALLERY</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+    </div>
 
 
     <!-- main -->
